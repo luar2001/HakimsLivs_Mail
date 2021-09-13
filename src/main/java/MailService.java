@@ -12,15 +12,14 @@ import okhttp3.Headers;
 
     /**
      * Sends a mail using Twilio SendsGrid
-     * @param apiKey twilio ApiKey
      * @param json json body
      */
-     static void sendMail(String apiKey, String json){
+     static void sendMail(String json){
 
         String sendUrl = url + "mail/send";
 
         Headers headers = new Headers.Builder()
-                .add("Authorization", "Bearer "+ apiKey)
+                .add("Authorization", "Bearer "+ System.getenv("SECRET_MAIL_APIKEY"))
                 .add("Content-Type", "application/json")
                 .build();
 
