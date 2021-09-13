@@ -10,9 +10,7 @@
     <name>hakimLivsMail</name>
     <description>Mail Service</description>
     <properties>
-        <maven.compiler.source>1.16</maven.compiler.source>
-        <maven.compiler.target>1.16</maven.compiler.target>
-        <java.version>16</java.version>
+        <maven.compiler.release>16</maven.compiler.release>
     </properties>
 
     <dependencies>
