@@ -4,8 +4,7 @@ public class Start {
         String toMail= "Hakimslives@gmail.com";
         String subject = "Mail subject";
         String content = "Mail Content";
-        String apiKey = "NULL";
 
-        MailService.sendMail(apiKey,MailBuilder.mailBuilder(toMail,subject,content));
+        MailService.sendMail(MailBuilder.mailBuilder(toMail,subject,content));
     }
 }
