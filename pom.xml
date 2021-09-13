@@ -9,8 +9,10 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>hakimLivsMail</name>
     <description>Mail Service</description>
+
     <properties>
-        <maven.compiler.release>15</maven.compiler.release>
+        <maven.compiler.release>16</maven.compiler.release>
+        <java.version>16</java.version>
     </properties>
 
     <dependencies>
@@ -20,4 +22,5 @@
             <version>4.9.1</version>
         </dependency>
     </dependencies>
+
 </project>
