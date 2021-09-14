@@ -1,3 +1,5 @@
+package com.example.hakimlivsmail;
+
 /**
  * Builds the JSON body of the HTTP Request that will then be turned into a MAIL by SendGrid
  */
