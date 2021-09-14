@@ -62,22 +62,24 @@ public class MailService {
 
             subject = "Order Bekräftelse";
             content = "Din order har gått igenom!";
+            System.out.println("ORDER!");
 
         } else if(type.equalsIgnoreCase("NEWACCOUNT")){
 
             subject = "Du har Skapat ett konto hos Hakimslivs";
             content = "Tack för att du har skapat ett konto hos oss!";
+            System.out.println("NEWACCOUNT!");
 
         }
-
-        Headers headers = new Headers.Builder()
-                .add("Authorization", "Bearer "+ System.getenv("SECRET_MAIL_APIKEY"))
-                .add("Content-Type", "application/json")
-                .build();
-
-        String temp = Connection.httpRequest(sendUrl,"POST", MailBuilder.mailBuilder(mailAddress,subject,content), headers);
-
-        System.out.println("POST Request:\n" + temp);
+//
+//        Headers headers = new Headers.Builder()
+//                .add("Authorization", "Bearer "+ System.getenv("SECRET_MAIL_APIKEY"))
+//                .add("Content-Type", "application/json")
+//                .build();
+//
+//        String temp = Connection.httpRequest(sendUrl,"POST", MailBuilder.mailBuilder(mailAddress,subject,content), headers);
+//
+//        System.out.println("POST Request:\n" + temp);
     }
 
 }
