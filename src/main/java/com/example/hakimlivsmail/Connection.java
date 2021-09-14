@@ -1,3 +1,5 @@
+package com.example.hakimlivsmail;
+
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
 
@@ -37,7 +39,7 @@ import java.util.Objects;
 
         try(Response response = client.newCall(request).execute()){
 
-            if(!response.isSuccessful()) throw new IOException("\nConnection ERROR: \n" + response);
+            if(!response.isSuccessful()) throw new IOException("\ncom.example.hakimlivsmail.Connection ERROR: \n" + response);
 
             return Objects.requireNonNull(response.body()).string();
 
